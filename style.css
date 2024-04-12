@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+
+}
+.heropage{
+    background-image: url(assets/spacex-heropage.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 768px;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+    
+}
+/******************************logo****************************/
+.navlogo{
+    height:1.7rem;
+    width: 14rem;
+    margin: 30px;
+    margin-left: 40px;
+    
+}
+.logo{
+    background-image: url(assets/spacex-logo.png);
+    background-size: cover;
+    height: 1.7rem;
+    width: 100%;
+    padding-left: 30px;
+}
+/**navbar buttons**/
+.btn1{
+    text-decoration: none;
+    color: white;
+    font-weight: 790;
+    margin-left: 9px;
+}
+.btn2{
+    text-decoration: none;
+    color: white;
+    font-weight: 790;
+    margin-left: 20px;
+}
+.btn3{
+    text-decoration: none;
+    color: white;
+    font-weight: 790;
+    margin-left: 20px;
+}
+.btn4{
+    text-decoration: none;
+    color: white;
+    font-weight: 790;
+    margin-left: 20px;
+}
+.btn5{
+    text-decoration: none;
+    color: white;
+    font-weight: 790;
+    margin-left: 20px;
+}
+.btn6{
+    text-decoration: none;
+    color: white;
+    font-weight: 790;
+    margin-left: 20px;
+}
+.btn7{
+    text-decoration: none;
+    color: white;
+    font-weight: 790;
+    margin-left: 20px;
+}
+.btn8{
+    text-decoration: none;
+    color: white;
+    font-weight: 790;
+    margin-left: 20px;
+    
+}
+.shop{
+    margin-top: -3px;
+    margin-left: 150px;
+    font-size: 13px;
+}
+.btn9{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+/*******menu 3lines*********/
+.lines3{
+    position: fixed;
+    top: 35px;
+    right: 60px;
+    z-index: 10;
+    cursor: pointer;
+    background: none;
+}
+.menutop, .menumid, .menubottom{
+    position: absolute;
+    top: 0;
+    left: 10;
+    width: 20px;
+    height: 2px;
+    background: white;
+}
+.menumid{
+    transform: translateY(5px);
+
+}
+.menubottom{
+    transform: translateY(10px);
+
+}
+.open{
+    transform: rotate(90deg);
+}
+#menu.open .menutop{
+    transform: rotate(45deg) translateY(0px);
+
+}
+#menu.open .menumid{
+    display: none;
+}    
+#menu.open .menubottom{
+    transform: rotate(-45deg) translateY(0px);
+
+}
+
+/**navbar button animation**/
+.navbar p {
+    display: inline-block;
+    position: relative;
+    font-size: 0.8rem;
+    margin-top: 40px;
+    font-weight: bolder;
+    font-family: 'Brandon Grotesque','brandon-grotesque',Helvetica,sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navbar p::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.21s ease-out;
+}
+.navbar p:hover::before{
+    transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.shop p {
+    display: inline-block;
+    position: relative;
+    font-size: 0.8rem;
+    margin-top: 40px;
+    font-weight: bolder;
+    font-family: 'Brandon Grotesque','brandon-grotesque',Helvetica,sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.shop p::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.shop p:hover::before{
+    transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.btntext1{
+    position: absolute;
+    bottom: 200px;
+    left: 50px;
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+    
+}
+.btntext1 h2{
+    max-width: 90%;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 15px;
+}
+.btntext1 h6{
+    font-weight: 100;  
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.rewatchbtn1{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 40px;
+    margin-top: 10px;
+    border: 2px solid white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+    overflow: hidden;
+    z-index: 2;
+    
+}
+
+.rewatchbtn1:hover span{
+    color: black;
+}
+.rewatchbtn1 .rewatch-hover1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    z-index: -1;
+    transform: translateY(100%);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.rewatchbtn1:hover .rewatch-hover1{
+    transform: translateY(0);
+}
+.img2{
+    background-image: url(assets/starlink\ mission\ 1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    width: 100%;
+}
+.btntext2{
+    position: absolute;
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+    color: white;
+    margin-left: 50px;
+    margin-top: 35rem;
+    
+    
+}
+.btntext2 h2{
+    max-width: 90%;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 15px;
+}
+.btntext2 h6{
+    font-weight: 100;  
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.rewatchbtn2{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 40px;
+    margin-top: 10px;
+    border: 2px solid white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+    overflow: hidden;
+    z-index: 2;
+    
+}
+
+.rewatchbtn2:hover span{
+    color: black;
+}
+.rewatchbtn2 .rewatch-hover2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    z-index: -1;
+    transform: translateY(100%);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.rewatchbtn2:hover .rewatch-hover2{
+    transform: translateY(0);
+}
+
+.img3 {
+    background-image: url(assets/starlink-mission2.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 770px;
+    width: 100%;
+}
+.btntext3{
+    position: absolute;
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+    color: white;
+    margin-left: 50px;
+    margin-top: 440px;
+    
+    
+}
+.btntext3 h2{
+    max-width: 90%;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 15px;
+}
+.btntext3 h6{
+    font-weight: 100;  
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.rewatchbtn3{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 40px;
+    margin-top: 10px;
+    border: 2px solid white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+    overflow: hidden;
+    z-index: 2;
+    
+}
+
+.rewatchbtn3:hover span{
+    color: black;
+}
+.rewatchbtn3 .rewatch-hover3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    z-index: -1;
+    transform: translateY(100%);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.rewatchbtn3:hover .rewatch-hover3{
+    transform: translateY(0);
+}
+
+.img4 {
+    background-image: url(assets/starship\ test.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 770px;
+    width: 100%;
+}
+.btntext4{
+    position: absolute;
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+    color: white;
+    margin-left: 50px;
+    margin-top: 440px;
+    
+    
+}
+.btntext4 h2{
+    max-width: 80%;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 15px;
+}
+.btntext4 h6{
+    font-weight: 100;  
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.rewatchbtn4{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 40px;
+    margin-top: 10px;
+    border: 2px solid white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+    overflow: hidden;
+    z-index: 2;
+    
+}
+
+.rewatchbtn4:hover span{
+    color: black;
+}
+.rewatchbtn4 .rewatch-hover4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    z-index: -1;
+    transform: translateY(100%);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.rewatchbtn4:hover .rewatch-hover4{
+    transform: translateY(0);
+}
+/**************footer styling*****************/
+.footer{
+    background-color: black;
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 12px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    margin-left: 20px;
+    font-family: D-DIN-BOLD,Arial, verdana, sans-serif;
+    margin-left: 35px;
+    transform: transition; 
+    transition-behavior: normal, normal;
+    transition-duration: 1s, 1s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.25, 1), cubic-bezier(0.25, 1, 0.25, 1);
+}
+.footer a:hover{
+    color: #656669;
+}
+#copyright1{
+    cursor: pointer;
+    color: #d3d3d3;
+    
+}
